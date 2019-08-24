@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="794.0" style="-fx-background-color: #001;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PersonalInformation1">
+   <children>
+      <Pane layoutY="1.0" prefHeight="600.0" prefWidth="794.0">
+         <children>
+            <VBox layoutX="73.0" layoutY="128.0" prefHeight="227.0" prefWidth="100.0" spacing="23.0">
+               <children>
+                  <Label opacity="0.91" text="NAME" textFill="#ed591a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label opacity="0.91" text="CONTACT" textFill="#ed591a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label opacity="0.91" text="EMAIL" textFill="#ed591a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label opacity="0.91" text="POSITION" textFill="#ed591a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label opacity="0.91" text="ADDRESS" textFill="#ed591a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Text fill="#ed591a" layoutX="54.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERSONAL INFORMATION">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <VBox layoutX="213.0" layoutY="131.0" prefHeight="379.0" prefWidth="514.0" spacing="24.0">
+               <children>
+                  <TextField fx:id="name" promptText="in capital letteres" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="contact" promptText="personal" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="email" promptText="take care of capslock" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="position" promptText="current qualification which you are doing" style="-fx-background-radius: 20;" />
+                  <TextArea fx:id="address" prefHeight="200.0" prefWidth="200.0" promptText="switch to next line aftre every detalis" />
+               </children>
+            </VBox>
+            <Button fx:id="button1" layoutX="639.0" layoutY="533.0" mnemonicParsing="false" onAction="#third" prefHeight="27.0" prefWidth="88.0" text="NEXT" />
+            <Button fx:id="submit" layoutX="549.0" layoutY="533.0" mnemonicParsing="false" onAction="#submit" prefHeight="27.0" prefWidth="88.0" text="SUBMIT" />
+            <Line endX="500.0" layoutX="155.0" layoutY="86.0" startX="-100.0" stroke="#ed591a" strokeWidth="1.5" />
+            <Text fill="#ed591a" layoutX="54.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESS SUBMIT BUTTON TO SAVE CURRENT DATA" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
